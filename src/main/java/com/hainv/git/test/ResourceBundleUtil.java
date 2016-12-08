@@ -12,34 +12,25 @@ import java.util.Properties;
 public class ResourceBundleUtil {
     private static ResourceBundleUtil instance;
 
-
-
-
-    private String x = null;
-    private String m = null;
-
-
-
-
-
-
     private Properties a;
     private String b = null;
-
     private final String BUNDLE_NAME = "bundle.properties";
+
+
+
+    private Properties ml;
+
+    private Properties k;
+
     private Properties pros;
 
     public ResourceBundleUtil() throws IOException {
         InputStream inputStream = getClass().getClassLoader().getResourceAsStream(BUNDLE_NAME);
         Reader reader = new InputStreamReader(inputStream, "UTF-8");
-
-
-
         pros = new Properties();
         pros.load(reader);
     }
 
-    private String c = null;
     public void test1(){
 
 
@@ -61,17 +52,20 @@ public class ResourceBundleUtil {
         return instance;
     }
 
+
+
+
+
+
     public void test() {
-    }
-    public void hainv_test(){
 
     }
+
+
+
+
 
     public String loadResource(String resourceName) {
         return pros.getProperty(resourceName);
-    }
-
-    public void hainv(){
-
     }
 }
