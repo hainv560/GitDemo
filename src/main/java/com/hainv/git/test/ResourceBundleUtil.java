@@ -11,6 +11,8 @@ import java.util.Properties;
  */
 public class ResourceBundleUtil {
     private static ResourceBundleUtil instance;
+    private Properties a;
+    private String b = null;
     private final String BUNDLE_NAME = "bundle.properties";
     private Properties pros;
 
@@ -20,6 +22,29 @@ public class ResourceBundleUtil {
         pros = new Properties();
         pros.load(reader);
     }
+
+    public void test1(){
+
+
+
+
+    }
+
+    public static ResourceBundleUtil getInstance() {
+        if (instance == null) {
+            synchronized (ResourceBundleUtil.class) {
+                if (instance == null)
+                    try {
+                        instance = new ResourceBundleUtil();
+                    } catch (IOException e) {
+                        //logger.error("Have problem: " + e);
+                    }
+            }
+        }
+        return instance;
+    }
+
+    public void test() {
 
     public void hainv_test(){
 
