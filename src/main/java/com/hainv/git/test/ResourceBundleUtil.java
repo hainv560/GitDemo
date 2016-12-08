@@ -11,7 +11,12 @@ import java.util.Properties;
  */
 public class ResourceBundleUtil {
     private static ResourceBundleUtil instance;
+
+    private Properties a;
+    private String b = null;
     private final String BUNDLE_NAME = "bundle.properties";
+
+
     private Properties pros;
 
     public ResourceBundleUtil() throws IOException {
