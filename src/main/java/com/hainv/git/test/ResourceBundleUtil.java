@@ -21,21 +21,15 @@ public class ResourceBundleUtil {
         pros.load(reader);
     }
 
-    public static ResourceBundleUtil getInstance() {
-        if (instance == null) {
-            synchronized (ResourceBundleUtil.class) {
-                if (instance == null)
-                    try {
-                        instance = new ResourceBundleUtil();
-                    } catch (IOException e) {
-                        //logger.error("Have problem: " + e);
-                    }
-            }
-        }
-        return instance;
+    public void hainv_test(){
+
     }
 
     public String loadResource(String resourceName) {
         return pros.getProperty(resourceName);
+    }
+
+    public void hainv(){
+
     }
 }
