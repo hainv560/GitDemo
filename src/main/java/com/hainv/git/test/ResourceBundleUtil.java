@@ -13,6 +13,9 @@ public class ResourceBundleUtil {
     private static ResourceBundleUtil instance;
     private Properties a;
     private String b = null;
+    private String d = null;
+    private String e = null;
+    private String f = null;
     private final String BUNDLE_NAME = "bundle.properties";
     private Properties pros;
 
@@ -23,6 +26,7 @@ public class ResourceBundleUtil {
         pros.load(reader);
     }
 
+    private String c = null;
     public void test1(){
 
 
@@ -45,7 +49,7 @@ public class ResourceBundleUtil {
     }
 
     public void test() {
-
+    }
     public void hainv_test(){
 
     }
