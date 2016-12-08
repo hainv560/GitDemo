@@ -17,6 +17,11 @@ public class ResourceBundleUtil {
     private final String BUNDLE_NAME = "bundle.properties";
 
 
+
+    private Properties ml;
+
+    private Properties k;
+
     private Properties pros;
 
     public ResourceBundleUtil() throws IOException {
@@ -47,9 +52,18 @@ public class ResourceBundleUtil {
         return instance;
     }
 
+
+
+
+
+
     public void test() {
 
     }
+
+
+
+
 
     public String loadResource(String resourceName) {
         return pros.getProperty(resourceName);
