@@ -21,6 +21,13 @@ public class ResourceBundleUtil {
         pros.load(reader);
     }
 
+    public void test1(){
+
+
+
+
+    }
+
     public static ResourceBundleUtil getInstance() {
         if (instance == null) {
             synchronized (ResourceBundleUtil.class) {
@@ -33,6 +40,10 @@ public class ResourceBundleUtil {
             }
         }
         return instance;
+    }
+
+    public void test() {
+
     }
 
     public String loadResource(String resourceName) {
