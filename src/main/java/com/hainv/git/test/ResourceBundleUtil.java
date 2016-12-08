@@ -11,17 +11,30 @@ import java.util.Properties;
  */
 public class ResourceBundleUtil {
     private static ResourceBundleUtil instance;
+
+
+
+
+    private String x = null;
+    private String m = null;
+
+
+
+
+
+
     private Properties a;
     private String b = null;
-    private String d = null;
-    private String e = null;
-    private String f = null;
+
     private final String BUNDLE_NAME = "bundle.properties";
     private Properties pros;
 
     public ResourceBundleUtil() throws IOException {
         InputStream inputStream = getClass().getClassLoader().getResourceAsStream(BUNDLE_NAME);
         Reader reader = new InputStreamReader(inputStream, "UTF-8");
+
+
+
         pros = new Properties();
         pros.load(reader);
     }
