@@ -25,8 +25,14 @@ public class ResourceBundleUtil {
 
     private Properties a;
     private String b = null;
-
     private final String BUNDLE_NAME = "bundle.properties";
+
+
+
+    private Properties ml;
+
+    private Properties k;
+
     private Properties pros;
 
     public ResourceBundleUtil() throws IOException {
