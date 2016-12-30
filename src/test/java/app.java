@@ -1,5 +1,3 @@
-package PACKAGE_NAME;
-
 /**
  * Created by Hai NV on 12/30/2016.
  */
